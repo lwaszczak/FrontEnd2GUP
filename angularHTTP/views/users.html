@@ -1,0 +1,35 @@
+Imię: <input type="text" ng-model="name" />
+Nazwisko: <input type="text" ng-model="lastname" />
+<button ng-click="add()">Dodaj</button>
+<hr>
+<div class="row">
+	<ol>
+		<li ng-repeat="user in users">
+			<div class="col-md-2s">
+			
+			<a href="#!/user/{{ user.id }}">{{ user.name }} {{ user.lastname }}</a>
+			</div>
+			
+			
+			
+			<span class="edit-mode" ng-show="userEditWindow">
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon1">Imię</span>
+					<input type="text" ng-model="user.name" class="form-control" aria-describedby="basic-addon1">
+			</div>
+				<div class="input-group">
+					<span class="input-group-addon" id="basic-addon2">Nazwisko</span>
+					<input type="text" ng-model="user.lastname" class="form-control" aria-describedby="basic-addon1">
+				</div>
+				<button class="btn btn-success" ng-click="userEditWindow=false; edit(user.id)">Zapisz</button>
+			</span>
+			
+			<br>
+			<button class="btn btn-danger" ng-click="delete(user.id)">Usuń</button>
+			<button class="btn btn-info" ng-click="userEditWindow=true">Edytuj</button>
+			
+		</li>
+	</ol>
+		
+	
+</div>
