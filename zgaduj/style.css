@@ -1,0 +1,13 @@
+body {
+    background: #ddd;
+}
+
+div#section_one {
+    max-width: 400px;
+    text-align: center;
+}
+
+button {
+    margin-top: 20px;
+}
+

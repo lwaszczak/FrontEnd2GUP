@@ -6,8 +6,8 @@ header {
 }
 
 .input-group {
-    position: relative;
-    margin-left: center;
+/*    position: relative;*/
+    
     max-width: 300px;
 /*
     margin-left: 300px;
