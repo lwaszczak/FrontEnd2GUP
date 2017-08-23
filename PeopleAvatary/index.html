@@ -18,15 +18,51 @@
 	
     <body>
 		
-		<div class="container-fluid">
+		<div class="container-fluid" ng-controller="mainController">
+			
+			<nav class="navbar navbar-default">
+				  <div class="container-fluid">
+						<div class="navbar-header col-md-3">
+					  		<a class="navbar-brand" href="#">Załaduj dane</a>
+						</div>
+							
+						<button class="btn btn-primary" ng-click="makeUser()">Mężczyźni</button>
+						<button class="btn btn-danger" ng-click="showWoman()">Kobiety</button>
+						<button class="btn btn-success" ng-click="showAll()">Wszyscy</button>
+				  </div>
+			</nav>
 		
-		
-		
+		<table class="table table-bordered">
+    		<thead>
+				  <tr>
+					<th>#</th>
+					<th>Imię</th>
+					<th>Nazwisko</th>
+				  </tr>
+    		</thead>
+			
+    		<tbody>
+				  <tr ng-repeat="user in users">
+					<td> {{ user.id }}</td>
+					<td ng-model="name"> {{user.name}}</td>
+					<td ng-model="lastname"> {{user.lastname }}</td>
+				  </tr>
+				
+<!--
+				  <tr>
+					<td>2</td>
+					<td>Mary</td>
+					<td>Moe</td>
+				  </tr>
+-->
+				
+    		</tbody>
+  		</table>
 		
 		</div>
 		
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
-<!--        <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>-->	
+        <script src="https://code.angularjs.org/1.6.5/angular-route.min.js"></script>	
         <script src="./js/app.js"></script>
 		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     </body>
