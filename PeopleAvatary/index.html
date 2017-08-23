@@ -36,16 +36,16 @@
     		<thead>
 				  <tr>
 					<th class="col-xs-1">#</th>
-					<th>Imię</th>
-					<th>Nazwisko</th>
+					<th class="col-xs-5">Imię</th>
+					<th class="col-xs-6">Nazwisko</th>
 				  </tr>
     		</thead>
 			
     		<tbody>
 				  <tr ng-repeat="user in users">
-					<td> {{ user.id }}</td>
-					<td ng-model="name"> {{user.name}}</td>
-					<td ng-model="lastname"> {{user.lastname }}</td>
+					<td> {{ $index + 1 }}</td>
+					<td ng-model="name"> {{ user.name }}</td>
+					<td ng-model="lastname"> {{ user.lastname }}</td>
 				  </tr>		
     		</tbody>
   		</table>
