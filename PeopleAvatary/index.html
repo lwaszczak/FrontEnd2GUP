@@ -26,16 +26,16 @@
 					  		<a class="navbar-brand" href="#">Załaduj dane</a>
 						</div>
 							
-						<button class="btn btn-primary" ng-click="makeUser()">Mężczyźni</button>
-						<button class="btn btn-danger" ng-click="showWoman()">Kobiety</button>
-						<button class="btn btn-success" ng-click="showAll()">Wszyscy</button>
+						<button class="btn btn-primary" ng-click="loadData('male')">Mężczyźni</button>
+						<button class="btn btn-danger" ng-click="loadData('female')">Kobiety</button>
+						<button class="btn btn-success" ng-click="loadData()">Wszyscy</button>
 				  </div>
 			</nav>
 		
 		<table class="table table-bordered">
     		<thead>
 				  <tr>
-					<th>#</th>
+					<th class="col-xs-1">#</th>
 					<th>Imię</th>
 					<th>Nazwisko</th>
 				  </tr>
@@ -46,16 +46,7 @@
 					<td> {{ user.id }}</td>
 					<td ng-model="name"> {{user.name}}</td>
 					<td ng-model="lastname"> {{user.lastname }}</td>
-				  </tr>
-				
-<!--
-				  <tr>
-					<td>2</td>
-					<td>Mary</td>
-					<td>Moe</td>
-				  </tr>
--->
-				
+				  </tr>		
     		</tbody>
   		</table>
 		
