@@ -86,10 +86,10 @@ app.controller('first', function($scope, $http, $filter) {
 			}, function(error) {
 				console.error(error);
 			});
+			$scope.editId = null;
 		} else {
 			scope.editId = user.id;
-		  }
-		
+		}
 	}
 });
 
