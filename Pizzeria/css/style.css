@@ -1,3 +1,29 @@
-img {
+
+.pizza {
 	text-align: center;
+	cursor: pointer;
+}
+
+.boosters {
+	list-style-type: none;
+	cursor: pointer;
+	padding: 10px 0;
+}
+
+.boostList {
+	height: 800px;
+}
+
+.boostItem {
+	font-family: fantasy;
+	height: 100px;
+	width: 100%;
+	background-repeat: no-repeat;
+	color: floralwhite;
+	font-size: 20px;
+}
+
+#imageDiv {
+	background-image: url('http://data.whicdn.com/images/65932391/original.png');
+	height: 800px;
 }
