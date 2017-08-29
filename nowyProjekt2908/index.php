@@ -185,7 +185,7 @@ and open the template in the editor.
             </div>
             
             <div class="text-center">
-                <button text-align="center" class="btn btn-default">Load more</button>
+                <button id="loadMore" type="button" class="btn btn-default">Load more</button>
             </div>
             
             
@@ -193,8 +193,27 @@ and open the template in the editor.
         </div>
         
         <footer class="container-fluid jumbotron">
+            <div class="col-md-4 text-center">
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="#">Terms and conditions</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    
+                </ul>
+                
+            </div>
             
+            <div class="col-md-4"></div>
             
+            <div class="col-md-4">
+                
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="#">Follow</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-chevron-right"></span></a></li>
+                    
+                </ul>
+            </div>
         </footer>
         
         <?php
