@@ -1,0 +1,169 @@
+$mainFontFamily: 'Playfair Display';
+$mainFontSize: 14px;
+$mainFontColor: #626262;
+
+
+body {
+    font-family: $mainFontFamily;
+    font-size: $mainFontSize;
+    color: $mainFontColor;
+    line-height: 24px;
+}
+
+
+a {
+    color: $mainFontColor;
+    &:hover {
+        color: #FFC107;
+    }
+}
+
+
+.container-fluid {
+    padding: 20px 0px;
+}
+
+
+@media screen and (min-width: 992px) {
+.container {
+    width: 900px;
+}  
+}
+
+
+
+
+header {
+    
+    
+        .logo {
+            
+            text-align: center;
+            
+                a {
+                    
+                    display: block;
+                    font-family: 'Khand', sans-serif;
+					font-size: 30px;
+					text-decoration: none;
+                    
+                    &:hover {
+                        opacity: 0.7;
+                    }
+                    
+                }
+            
+        }
+
+        .mainMenu {
+            
+//            position: static;
+            min-height: 0;
+            margin-bottom: 0px;
+            
+                .navbar-toggle {
+                    
+                    position: absolute;
+                    top: 15px;
+                    right: 15px;
+                    margin: 0px;
+                    border: 1px solid $mainFontColor;
+                    
+                        span.icon-bar {
+                            background-color: $mainFontColor;
+                        }
+                        
+                    &:hover {
+                        border-color: #FFC107;
+                        span.icon-bar {
+                            background-color: #FFC107;
+                        }
+                    }
+                    
+                }
+                
+                
+                .navbar-collapse {
+                    
+                    margin-top: 20px;
+                    border: 1px solid #FFC107;
+                    
+                        > ul {
+                            
+                            margin: 0px 0px;
+                            font-family: 'Slabo 27px', serif;
+							
+                                > li {
+
+                                    border-bottom: 1px solid $mainFontColor;
+
+                                        a {
+                                            display: block;
+                                            padding: 10px 15px;
+                                            font-size: 16px;
+                                            text-align: center;
+                                            text-transform: uppercase;
+                                        }
+                                        
+                                        
+                                        @media screen and (min-width: 768px) { 
+
+                                        a {
+                                            margin-left: 50px;
+                                            padding: 0px;
+                                            background: none;
+                                        }
+                                        
+                                        }
+                                        
+                                        @media screen and (min-width: 992px) { 
+
+                                        a {
+                                            margin-left: 100px;
+                                        }
+                                        
+                                        }
+
+                                    &:last-child {
+                                        border-bottom: none;
+                                    }
+                                    
+                                }
+
+                                @media screen and (min-width: 768px) { 
+
+                                > li {
+                                    border-bottom: none;
+                                }
+
+                                }
+                            
+                            
+                        }
+                    
+                }
+                
+                @media screen and (min-width: 768px) {
+                    
+                .navbar-collapse {
+                    float: right;
+                    margin: 0px;
+                    border: none;
+                }
+                    
+                }
+                
+                
+            
+        }
+    
+}
+
+
+@media screen and (min-width: 1200px) {
+    
+header .container {
+    width: 1060px;
+}  
+    
+}
