@@ -1,79 +1,178 @@
+/*scroll effect*/
 body {
-  font-family: "Playfair Display";
+  font-family: "Raleway", sans-serif; }
+
+.navbar-trans {
+  background-color: transparent;
+  border: none;
+  -webkit-transition: top 1s ease;
+  -o-transition: top 1s ease;
+  transition: top 1s ease;
+  opacity: 0.8; }
+
+/*double row*/
+.navbar-doublerow > .navbar {
+  display: block;
+  padding: 0px auto;
+  margin: 0px auto;
+  min-height: 25px;
+  font-family: "Raleway", sans-serif; }
+
+.navbar-doublerow .nav {
+  padding: 0px auto; }
+
+.navbar-doublerow .dividline {
+  margin: 5px 100px;
+  padding-top: 1px;
+  background-color: inherit; }
+
+/*top nav*/
+.navbar-doublerow .navbar-top ul > li > a {
+  padding: 10px auto;
   font-size: 14px;
-  color: #626262;
-  line-height: 24px; }
+  font-family: "Raleway", sans-serif; }
 
-a {
-  color: #626262; }
-  a:hover {
-    color: #FFC107; }
+/*down nav*/
+.navbar-doublerow .navbar-down .navbar-brand {
+  padding: 0px auto;
+  float: left;
+  color: black;
+  font-size: 32px;
+  font-family: 'Khand', sans-serif; }
 
-.container-fluid {
-  padding: 20px 0px; }
+.navbar-doublerow .navbar-down ul > li > a {
+  font-size: 16px;
+  color: black;
+  -webkit-transition: border-bottom .2s ease-in , -webkit-transform .2s ease-in-out;
+  transition: border-bottom .2s ease-in , -webkit-transform .2s ease-in-out;
+  -o-transition: border-bottom .2s ease-in , transform .2s ease-in-out;
+  transition: border-bottom .2s ease-in , transform .2s ease-in-out;
+  transition: border-bottom .2s ease-in , transform .2s ease-in-out , -webkit-transform .2s ease-in-out; }
 
-@media screen and (min-width: 992px) {
-  .container {
-    width: 900px; } }
+.navbar-doublerow .navbar-down ul > li > a:hover {
+  color: #999; }
 
-header .logo {
-  text-align: center; }
-  header .logo a {
-    display: block;
-    font-family: 'Khand', sans-serif;
-    font-size: 30px;
-    text-decoration: none; }
-    header .logo a:hover {
-      opacity: 0.7; }
+.navbar-doublerow .navbar-down .dropdown {
+  padding: 5px;
+  color: #000; }
 
-header .mainMenu {
-  min-height: 0;
-  margin-bottom: 0px; }
-  header .mainMenu .navbar-toggle {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    margin: 0px;
-    border: 1px solid #626262; }
-    header .mainMenu .navbar-toggle span.icon-bar {
-      background-color: #626262; }
-    header .mainMenu .navbar-toggle:hover {
-      border-color: #FFC107; }
-      header .mainMenu .navbar-toggle:hover span.icon-bar {
-        background-color: #FFC107; }
-  header .mainMenu .navbar-collapse {
-    margin-top: 20px;
-    border: 1px solid #FFC107; }
-    header .mainMenu .navbar-collapse > ul {
-      margin: 0px 0px;
-      font-family: 'Slabo 27px', serif; }
-      header .mainMenu .navbar-collapse > ul > li {
-        border-bottom: 1px solid #626262; }
-        header .mainMenu .navbar-collapse > ul > li a {
-          display: block;
-          padding: 10px 15px;
-          font-size: 16px;
-          text-align: center;
-          text-transform: uppercase; }
-        @media screen and (min-width: 768px) {
-          header .mainMenu .navbar-collapse > ul > li a {
-            margin-left: 50px;
-            padding: 0px;
-            background: none; } }
-        @media screen and (min-width: 992px) {
-          header .mainMenu .navbar-collapse > ul > li a {
-            margin-left: 100px; } }
-        header .mainMenu .navbar-collapse > ul > li:last-child {
-          border-bottom: none; }
-      @media screen and (min-width: 768px) {
-        header .mainMenu .navbar-collapse > ul > li {
-          border-bottom: none; } }
-  @media screen and (min-width: 768px) {
-    header .mainMenu .navbar-collapse {
-      float: right;
-      margin: 0px;
-      border: none; } }
+.navbar-doublerow .navbar-down .dropdown ul > li > a,
+.navbar-doublerow .navbar-down .dropdown ul > li > a:hover {
+  color: #000;
+  border-bottom: none; }
 
-@media screen and (min-width: 1200px) {
-  header .container {
-    width: 1060px; } }
+.navbar-doublerow.navbar-trans.afterscroll {
+  top: -50px; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+/*text*/
+.text-white, .text-white-hover:hover {
+  color: black !important; }
+
+/*fontcolor*/
+.light-grey {
+  color: #000 !important;
+  background-color: black !important; }
+
+.glyphicon {
+  font-size: 20px; }
+
+#makeAppointment {
+  border: 1px solid;
+  padding: 7px;
+  margin-top: 5px; }
+
+.upperContainer {
+  margin-left: 20px; }
+
+.welcome {
+  font-family: "Raleway", sans-serif;
+  margin: 80px 0px; }
+
+#ourTeam, #whyWe {
+  font-family: "Raleway", sans-serif; }
+
+#whyWe .fa {
+  font-size: 80px;
+  color: blue; }
+
+.sectionTitle {
+  margin-bottom: 50px; }
+
+.adventages {
+  margin-bottom: 80px; }
+
+#ourTeam .mb-4 {
+  border: 1px solid; }
+
+.card-flip {
+  -webkit-perspective: 1000px;
+  perspective: 1000px; }
+  .card-flip:hover .flip,
+  .card-flip.hover .flip {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+
+.card-flip,
+.front,
+.back {
+  width: 100%;
+  height: 480px; }
+
+.flip {
+  -webkit-transition: 0.6s;
+  -o-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  position: relative; }
+
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: absolute; }
+
+.front {
+  z-index: 2;
+  -webkit-transform: rotateY(0deg);
+  transform: rotateY(0deg); }
+
+.back {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg); }
+
+.copyrights {
+  margin-top: 25px; }
+
+footer.container-fluid.text-center.foot {
+  background: #383838; }
+
+.dark-line {
+  border-top: 1px solid #525252; }
+
+.white-txt {
+  color: #FFF; }
+
+a.link {
+  color: #008acc;
+  border: 1px #008acc solid;
+  padding: 5px;
+  text-decoration: none; }
+
+a.link:hover {
+  text-decoration: none;
+  background: #008acc;
+  color: #383838; }
+
+.footimg {
+  width: 5rem; }

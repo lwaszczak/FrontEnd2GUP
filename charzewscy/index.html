@@ -6,10 +6,13 @@
 	<meta charset="UTF-8">
 	
 	<!--Fonts-->
-	<link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Julius+Sans+One|Khand:300,400,500,600|Playfair+Display:400,400i,700|Rock+Salt|Slabo+27px&amp;subset=latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Khand:300,400,500,600,700|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900|Roboto:300,300i,400,400i,500,500i,700,700i,900&amp;subset=latin-ext" rel="stylesheet">
+
 
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/bootstrap-social-gh-pages/assets/css/font-awesome.css" />
 
 	<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
 		<!-- Latest compiled and minified CSS -->
@@ -21,73 +24,76 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-	<script type="text/javascript" src="assets/js/app.js"></script>
+	<script type="text/javascript" src="./assets/js/app.js"></script>
+	
 	
 </head>
 	
 <body>
 	
 	
-	<header class="container-fluid">
-<!--            <div class="container">-->
-                <div class="row">
-                    
-                    <div class="logo col-xs-12 col-sm-5">
-                        <a id="logo_name"href="#">
-                            charzewscy.eu
-                        </a>
-                    </div>
-                    
-					<div class="col-xs-12 col-sm-7">
-					
-						<div class="col-sm-6">
-							
-							<span class="glyphicon glyphicon-earphone col-sm-3" aria-hidden="true"></span>
-							<div class="unit-body col-sm-9" >
-								<div class="col-sm-12"><h4>Zadzwoń: </h4></div>
-								<div class="col-sm-12">(58) 314-76-45</div>
-							</div>
-							
-						</div>
-						
-						<div class="col-sm-6">
-							
-							<span class="glyphicon glyphicon-time" aria-hidden="true"></span>
-							Godziny otwarcia:
-							
-							
-						</div>
-					
-					</div>
-					
-                    <nav class="mainMenu col-xs-12 col-sm-12 navbar">
-                        
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mainMenu" aria-expanded="false">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        
-                        <div class="collapse navbar-collapse" id="mainMenu">
-                            <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">ZESPÓŁ</a></li>
-                                <li><a href="#">Link 2</a></li>
-                                <li><a href="#">Link 3</a></li>
-                                <li><a href="#">Link 4</a></li>
-                            </ul>
-                        </div>
-                        
-                    </nav>
-                    
-                </div>
-<!--            </div>-->
-        </header>
-	
+	<nav class="navbar navbar-default navbar-doublerow navbar-trans navbar-fixed-top">
+		
+  		<!-- top nav -->
+  		<nav class="navbar navbar-top hidden-xs">
+    		<div class="container upperContainer">
+				
+			  	<!-- left nav top -->
+			  	<ul class="nav navbar-nav col-sm-6 pull-left">
 
+					<li><a><span class="glyphicon glyphicon-earphone text-white"></span></a></li>
+        			
+					<li><a href="#"><span class="text-white">Zadzwoń: <b>58 620-02-37</b> kom. <b>502-273-610</b></span></a></li>		
+					
+      			</ul>
+				
+      			<!-- right nav top -->
+      			<ul class="nav navbar-nav col-sm-6 pull-right">
+        			<li><a><span class="glyphicon glyphicon-time text-white"></span></a></li>
+        			<li><a href="#"><span class="text-white">Godziny otwarcia: <b>pn-wt: 12:00 - 18:00, czw-pt: 12:00 - 18:00</b></span></a></li>
+      			</ul>
+    		</div>
+    		<div class="dividline light-grey"></div>
+  		</nav>
+		
+  <!-- down nav -->
+  		<nav class="navbar navbar-down">
+    		<div class="container">
+      			<div class="flex-container">  
+        			<div class="navbar-header flex-item">
+          				<div class="navbar-brand" href="#">charzewscy.eu</div>
+        			</div>
+        			<ul class="nav navbar-nav flex-item hidden-xs">
+						<li><a href="#ourTeam">Kim jesteśmy?</a></li>
+						<li><a href="#">Co robimy?</a></li> 
+						<li><a href="#map">Gdzie nas znaleźć?</a></li> 
+        			</ul>
+        			<ul class="nav navbar-nav flex-item hidden-xs pull-right">
+          				<li><a href="#" id="makeAppointment">Zamów wizytę!</a></li> 
+					</ul>
+						
+					<!-- dropdown only moblie -->
+					<div class="dropdown visible-xs pull-right">
+            			<button class="btn btn-default dropdown-toggle " type="button" id="dropdownmenu" data-toggle="dropdown">
+              				<span class="glyphicon glyphicon-align-justify"></span> 
+            			</button>
+            			<ul class="dropdown-menu">
+							  <li><a href="#">Kim jesteśmy?</a></li>
+							  <li><a href="#">Co robimy?</a></li> 
+							  <li><a href="#">Gdzie nas znaleźć?</a></li> 
+							  <li role="separator" class="divider"></li>
+							  <li><a href="#">Zamów wizytę</a></li>
+            			</ul>
+          			</div>
+        		</div>  
+      		</div>
+    	</nav>
+  	</nav>
 	
-	<div id="carousel" class="container-fluid">
-	
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	<!--bg img  -->
+	<header>
+  
+		<div id="myCarousel" class="carousel slide container-fluid" data-ride="carousel">
             <!-- Indicators -->
                 <ol class="carousel-indicators">
                     <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -99,35 +105,15 @@
             <div class="carousel-inner">
 				
 				<div class="item active">
-					<img src="./assets/images/3116.jpg" alt="Los Angeles" style="width:100%;">
+					<img src="./assets/images/3116.jpg" alt="Image1" style="width:100%;">
 				</div>
-<!--
-                <div class="thumbnail item active">
-                    <img src="./assets/images/big_image.png" alt="Los Angeles" style="width:100%;">
-                    <div class="caption">
-                        <h6 class="headerOfThumb">PHOTODIARY</h6>
-                        <h3 class="mainThumbnailHeader">The perfect weekend getaway</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat sit amet ante nec eleifend. In hac habitasse platea dictumst. Mauris orci nisi, suscipit nec nisl non, varius rhoncus leo.</p>
-                    </div>
-                </div>
--->
 
-                <div class="thumbnail item">
-                    <img src="./assets/images/american.png" alt="Los Angeles" style="width:100%;">
-                    <div class="caption">
-                        <h6 class="headerOfThumb">PHOTODIARY</h6>
-                        <h3 class="mainThumbnailHeader">The perfect weekend getaway</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat sit amet ante nec eleifend. In hac habitasse platea dictumst. Mauris orci nisi, suscipit nec nisl non, varius rhoncus leo.</p>
-                    </div>
-                </div>
+                <div class="item">
+					<img src="./assets/images/235.jpg" alt="Image2" style="width:100%;">
+				</div>
     
-                <div class="thumbnail item">
-                    <img src="./assets/images/song.png" alt="Los Angeles" style="width:100%;">
-                    <div class="caption">
-                        <h6 class="headerOfThumb">PHOTODIARY</h6>
-                        <h3 class="mainThumbnailHeader">The perfect weekend getaway</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque placerat sit amet ante nec eleifend. In hac habitasse platea dictumst. Mauris orci nisi, suscipit nec nisl non, varius rhoncus leo.</p>
-                    </div>
+                <div class="item">
+                    <img src="./assets/images/man_smile.jpg" alt="Image3" style="width:100%;">
                 </div>
             </div>
 
@@ -140,41 +126,220 @@
                 <span class="glyphicon glyphicon-chevron-right"></span>
                 <span class="sr-only">Next</span>
             </a>
-            </div>
+            
         </div>
 	
-	</div>
+	</header>    
 	
 	
-	<div id="ourTeam">
+	<!-- Content section -->
+	<div class="container">
+	
+		<section class="welcome">
+<!--			<div class="container">-->
+				<h1 class="text-center">Witamy na naszej stronie</h1>
+	<!--        	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+<!--			</div>-->
+
+
+		</section>
+
+		<section id="ourTeam">
+			<h2 class="sectionTitle text-center">Kim jesteśmy?</h2>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2"></div>
+					<div class="col-sm-4">
+						<!-- Card Flip -->
+						<div class="card-flip">
+							<div class="flip">
+								<div class="front">
+									<!-- front content -->
+									<div class="card">
+										<img class="img-responsive" src="./assets/images/man_square.jpg" max-width=100% alt="Mikołaj Charzewski">
+									  	<div class="card-block text-center">
+											<h4 class="card-title">lek. med. Mikołaj Charzewski</h4>
+											<h5 class="card-subtitle text-muted">chirurg - stomatolog</h5>
+											
+									  	</div>
+									</div>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<div class="card">
+									  	<div class="card-block">
+											<h4 class="card-title">Godziny przyjęć:</h4>
+<!--											<h6 class="card-subtitle text-muted">Support card subtitle</h6>-->
+									  	</div>
+									  
+									  	<div class="card-block">
+											<p class="card-text">
+												poniedziałek 12:00 - 18:00<br>
+												czwartek 12:00 - 18:00
+											</p>
+											<hr>
+											<a href="#" class="card-link">Wiecej...</a>									
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Card Flip -->
+					</div>
+<!--					<div class="col-sm-4"></div>-->
+					<div class="col-sm-4">
+					
+						<!-- Card Flip -->
+						<div class="card-flip">
+							<div class="flip">
+								<div class="front">
+									<!-- front content -->
+									<div class="card">
+										<img class="img-responsive" src="./assets/images/women_square.jpg" alt="Katarzyna Charzewska">
+									  	<div class="card-block text-center">
+											<h4 class="card-title">lek. med. Katarzyna Charzewska</h4>
+											<h5 class="card-subtitle text-muted">stomatolog</h5>
+											
+									  	</div>
+									</div>
+								</div>
+								<div class="back">
+									<!-- back content -->
+									<div class="card">
+									  	<div class="card-block">
+											<h4 class="card-title">Godziny przyjęć:</h4>
+<!--											<h6 class="card-subtitle text-muted">Support card subtitle</h6>-->
+									  	</div>
+									  
+									  	<div class="card-block">
+											<p class="card-text">
+												wtorek 12:00 - 18:00<br>
+												piątek 12:00 - 18:00
+											</p>
+											<hr>
+											<a href="#" class="card-link">Więcej...</a>								
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Card Flip -->
+					
+					
+					</div>
+					<div class="col-sm-2"></div>
+				</div>
+			</div>
+		</section>
+
+
+
+		<setion id="whyWe">
+
+<!--
+			<div class="row">
+				<div class="col-lg-12">
+-->
+			<h2 class="sectionTitle text-center">Dlaczego my?</h2>
+<!--				</div>-->
+			<div class="row">
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">	
+					<i class="fa fa-database" aria-hidden="true"></i>
+					<h4>OSZCZĘDNOŚĆ</h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">
+					<i class="fa fa-clock-o" aria-hidden="true"></i>
+					<h4>CZAS<br></h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">	
+					<i class="fa fa-thumbs-up" aria-hidden="true"></i>
+					<h4>DOŚWIADCZENIE</h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">	
+					<i class="fa fa-file-text-o" aria-hidden="true"></i>
+					<h4>CERTYFIKATY</h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+			</div>
+			
+			<div class="row">
+			
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">	
+					<i class="fa fa-star" aria-hidden="true"></i>
+					<h4>JAKOŚĆ</h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">
+					<i class="fa fa-hand-o-up" aria-hidden="true"></i>
+					<h4>INNOWACJE<br></h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">	
+					<i class="fa fa-users" aria-hidden="true"></i>
+					<h4>WSPÓŁPRACA</h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+
+				<div class="col-sm-3 col-xs-6 text-center mb-4 adventages">	
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<h4>GOTOWOŚĆ</h4>
+					<small>Fusce dui odio, tempor eu sapien ut, blandit fermentum quam.</small>
+				</div>
+			
+			</div>
+
+		</setion>
+
+		<div id="opinion">
+
+
+		</div>
+
+		<div id="appointment">
+
+
+		</div>
+
 		
 	</div>
 	
-	
-	<div id="opinion">
-	
-	
+	<div id="map" >
+			<h2 class="sectionTitle text-center">Gdzie nas znaleźć?</h2>
+			
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.7992752295288!2d18.538272772039985!3d54.52294099650734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMxJzIyLjYiTiAxOMKwMzInMjEuMSJF!5e0!3m2!1spl!2spl!4v1504268882889" width=100% height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+			
+
 	</div>
-	
-	<div id="appointment">
-	
-	
-	</div>
-	
-	<div id="map">
-	
-	
-	</div>
-	
-	
-	<footer>
-	
-		
-	
+    <!----------- Footer ------------>
+    <footer class="container-fluid text-center foot">
+
+        <div class="copyrights">
+            <p class="white-txt">Łukasz Waszczak ©2017
+                <br><br>
+                <img class="footimg" src="https://openclipart.org/download/59293/logo-water.svg" alt="Logo">
+            </p>
+            <hr class="dark-line">
+            <a class="link" href="#">Contact Us</a>
+            <a class="link" href="#">Privacy Policy</a>
+            <a class="link" href="#">Terms and Conditions</a>
+            <br><br>
+            <p class="white-txt small">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ornare elit odio, eu imperdiet ligula ullamcorper sed.
+            </p>
+        </div>
 	</footer>
 	
-	
-	
+
 </body>
 
 

@@ -1,169 +1,204 @@
-$mainFontFamily: 'Playfair Display';
-$mainFontSize: 14px;
-$mainFontColor: #626262;
-
+/*scroll effect*/
+$menuOpacity: 0.8;
+$mainFont: 'Raleway', sans-serif;
 
 body {
-    font-family: $mainFontFamily;
-    font-size: $mainFontSize;
-    color: $mainFontColor;
-    line-height: 24px;
+	font-family: $mainFont;
+}
+.navbar-trans {
+  background-color: transparent;
+  border: none;
+  transition: top 1s ease;
+	opacity: $menuOpacity;
+}
+ 
+/*double row*/
+.navbar-doublerow > .navbar{
+	display: block;	
+	padding: 0px auto;
+	margin: 0px auto;
+	min-height: 25px;
+	font-family: $mainFont 
+}
+.navbar-doublerow .nav{
+	padding: 0px auto;
+}
+.navbar-doublerow .dividline{
+  margin: 5px 100px;
+  padding-top: 1px;
+  background-color: inherit;
+}
+/*top nav*/
+.navbar-doublerow .navbar-top ul>li>a {
+	padding: 10px auto;
+	font-size: 14px;
+	font-family: $mainFont;
+
+} 
+/*down nav*/
+.navbar-doublerow .navbar-down .navbar-brand {
+	padding: 0px auto;
+	float: left;
+	color: black;
+	font-size: 32px;
+	font-family: 'Khand', sans-serif;
+}
+.navbar-doublerow .navbar-down ul>li>a{
+	font-size: 16px;
+	color: black;
+	transition: border-bottom .2s ease-in , transform .2s ease-in-out;
+}
+.navbar-doublerow .navbar-down ul>li>a:hover{
+//	border-bottom: 3px solid #000;
+	color: #999;
+}
+.navbar-doublerow .navbar-down .dropdown{
+    padding: 5px;
+    color: #000;
+}
+.navbar-doublerow .navbar-down .dropdown ul>li>a,
+.navbar-doublerow .navbar-down .dropdown ul>li>a:hover{
+  color: #000;
+  border-bottom: none;
+}
+.navbar-doublerow.navbar-trans.afterscroll {
+}	
+.navbar-doublerow.navbar-trans.afterscroll {
+   top:-50px;
+}	
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+.flex-item {
+}
+/*text*/
+.text-white,.text-white-hover:hover{
+	color: black!important
+}
+/*fontcolor*/
+.light-grey {
+	color:#000!important;
+	background-color:black!important
+}
+
+.glyphicon {
+    font-size: 20px;
+}
+
+#makeAppointment {
+	border: 1px solid;
+	padding: 7px;
+	margin-top: 5px
+}
+
+.upperContainer {
+	margin-left: 20px;
+}
+
+.welcome {
+	font-family: $mainFont;
+	margin: 80px 0px;
+}
+
+#ourTeam, #whyWe {
+	font-family: $mainFont;
+}
+
+#whyWe .fa {
+	font-size: 80px;
+	color: blue;
+}
+
+.sectionTitle {
+	margin-bottom: 50px;
+}
+
+.adventages { 
+	margin-bottom: 80px;
+}
+
+#ourTeam {
+	.mb-4 {
+		border: 1px solid;
+	}
+}
+
+//======================================
+
+.card-flip {
+  perspective: 1000px;
+  &:hover .flip,
+  &.hover .flip {
+    transform: rotateY(180deg);
+  }
+}
+
+.card-flip,
+.front,
+.back {
+  width: 100%;
+  height: 480px;
+}
+
+.flip {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+//  top: 0;
+//  left: 0;
+}
+
+.front {
+  z-index: 2;
+  transform: rotateY(0deg);
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+//==================footer========================
+
+.copyrights{
+	margin-top:25px;
+}
+
+footer.container-fluid.text-center.foot {
+    background: #383838;
+}
+
+.dark-line{
+	border-top: 1px solid #525252;
+}
+
+.white-txt{
+	color: #FFF;
 }
 
 
-a {
-    color: $mainFontColor;
-    &:hover {
-        color: #FFC107;
-    }
+a.link {
+    color: #008acc;
+    border: 1px #008acc solid;
+    padding: 5px;
+    text-decoration: none;
 }
 
-
-.container-fluid {
-    padding: 20px 0px;
+a.link:hover {
+	text-decoration: none;
+	background: #008acc;
+    color: #383838;
 }
 
-
-@media screen and (min-width: 992px) {
-.container {
-    width: 900px;
-}  
+.footimg{
+	width: 5rem;
 }
 
-
-
-
-header {
-    
-    
-        .logo {
-            
-            text-align: center;
-            
-                a {
-                    
-                    display: block;
-                    font-family: 'Khand', sans-serif;
-					font-size: 30px;
-					text-decoration: none;
-                    
-                    &:hover {
-                        opacity: 0.7;
-                    }
-                    
-                }
-            
-        }
-
-        .mainMenu {
-            
-//            position: static;
-            min-height: 0;
-            margin-bottom: 0px;
-            
-                .navbar-toggle {
-                    
-                    position: absolute;
-                    top: 15px;
-                    right: 15px;
-                    margin: 0px;
-                    border: 1px solid $mainFontColor;
-                    
-                        span.icon-bar {
-                            background-color: $mainFontColor;
-                        }
-                        
-                    &:hover {
-                        border-color: #FFC107;
-                        span.icon-bar {
-                            background-color: #FFC107;
-                        }
-                    }
-                    
-                }
-                
-                
-                .navbar-collapse {
-                    
-                    margin-top: 20px;
-                    border: 1px solid #FFC107;
-                    
-                        > ul {
-                            
-                            margin: 0px 0px;
-                            font-family: 'Slabo 27px', serif;
-							
-                                > li {
-
-                                    border-bottom: 1px solid $mainFontColor;
-
-                                        a {
-                                            display: block;
-                                            padding: 10px 15px;
-                                            font-size: 16px;
-                                            text-align: center;
-                                            text-transform: uppercase;
-                                        }
-                                        
-                                        
-                                        @media screen and (min-width: 768px) { 
-
-                                        a {
-                                            margin-left: 50px;
-                                            padding: 0px;
-                                            background: none;
-                                        }
-                                        
-                                        }
-                                        
-                                        @media screen and (min-width: 992px) { 
-
-                                        a {
-                                            margin-left: 100px;
-                                        }
-                                        
-                                        }
-
-                                    &:last-child {
-                                        border-bottom: none;
-                                    }
-                                    
-                                }
-
-                                @media screen and (min-width: 768px) { 
-
-                                > li {
-                                    border-bottom: none;
-                                }
-
-                                }
-                            
-                            
-                        }
-                    
-                }
-                
-                @media screen and (min-width: 768px) {
-                    
-                .navbar-collapse {
-                    float: right;
-                    margin: 0px;
-                    border: none;
-                }
-                    
-                }
-                
-                
-            
-        }
-    
-}
-
-
-@media screen and (min-width: 1200px) {
-    
-header .container {
-    width: 1060px;
-}  
-    
-}
+//====
