@@ -1,7 +1,4 @@
 /*scroll effect*/
-body {
-  font-family: "Raleway", sans-serif; }
-
 .navbar-trans {
   background-color: transparent;
   border: none;
@@ -98,7 +95,7 @@ body {
   font-family: "Raleway", sans-serif;
   margin: 80px 0px; }
 
-#ourTeam, #whyWe {
+#ourTeam, #whyWe, #map {
   font-family: "Raleway", sans-serif; }
 
 #whyWe .fa {

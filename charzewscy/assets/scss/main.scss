@@ -2,9 +2,6 @@
 $menuOpacity: 0.8;
 $mainFont: 'Raleway', sans-serif;
 
-body {
-	font-family: $mainFont;
-}
 .navbar-trans {
   background-color: transparent;
   border: none;
@@ -102,7 +99,7 @@ body {
 	margin: 80px 0px;
 }
 
-#ourTeam, #whyWe {
+#ourTeam, #whyWe, #map {
 	font-family: $mainFont;
 }
 
