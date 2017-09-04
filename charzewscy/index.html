@@ -11,19 +11,36 @@
 
 
 	<link rel="stylesheet" type="text/css" href="./assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="./assets/css/animate.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 	<link rel="stylesheet" type="text/css" href="./assets/bootstrap-social-gh-pages/assets/css/font-awesome.css" />
+	
+	<!-- UIkit CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/css/uikit.min.css" />
 
-	<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
-		<!-- Latest compiled and minified CSS -->
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	
+	<!--	Owl-Carousel CSS-->
+	<link rel="stylesheet" href="./assets/owlcarousel/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/owlcarousel/assets/owl.theme.default.min.css">
+	
+	<!-- jQuery is required -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-	<!-- Latest compiled and minified JavaScript -->
+	<!-- UIkit JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.28/js/uikit-icons.min.js"></script>
+
+	<!-- Bootstrap JS -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+	
+	<!--Owl-Carousel JS-->
+<!--	<script src="jquery.min.js"></script>-->
+	<script src="./assets/owlcarousel/owl.carousel.min.js"></script>
+	
+    <!-- app.js -->
 	<script type="text/javascript" src="./assets/js/app.js"></script>
 	
 	
@@ -64,9 +81,9 @@
           				<div class="navbar-brand" href="#">charzewscy.eu</div>
         			</div>
         			<ul class="nav navbar-nav flex-item hidden-xs">
-						<li><a href="#ourTeam">Kim jesteśmy?</a></li>
-						<li><a href="#">Co robimy?</a></li> 
-						<li><a href="#map">Gdzie nas znaleźć?</a></li> 
+						<li><a href="#ourTeam" uk-scroll>Kim jesteśmy?</a></li>
+						<li><a href="#" uk-scroll>Co robimy?</a></li> 
+						<li><a href="#map" uk-scroll>Gdzie nas znaleźć?</a></li> 
         			</ul>
         			<ul class="nav navbar-nav flex-item hidden-xs pull-right">
           				<li><a href="#" id="makeAppointment">Zamów wizytę!</a></li> 
@@ -105,15 +122,15 @@
             <div class="carousel-inner">
 				
 				<div class="item active">
-					<img src="./assets/images/3116.jpg" alt="Image1" style="width:100%;">
+					<img src="./assets/images/3116.jpg" alt="Image1">
 				</div>
 
                 <div class="item">
-					<img src="./assets/images/235.jpg" alt="Image2" style="width:100%;">
+					<img src="./assets/images/235.jpg" alt="Image2">
 				</div>
     
                 <div class="item">
-                    <img src="./assets/images/man_smile.jpg" alt="Image3" style="width:100%;">
+                    <img src="./assets/images/man_smile.jpg" alt="Image3">
                 </div>
             </div>
 
@@ -136,13 +153,13 @@
 	<div class="container">
 	
 		<section class="welcome">
-<!--			<div class="container">-->
-				<h1 class="text-center">Witamy na naszej stronie</h1>
-	<!--        	<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>-->
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
-<!--			</div>-->
 
+			<h1 class="text-center">Witamy na naszej stronie</h1>
 
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, suscipit, rerum quos facilis repellat architecto commodi officia atque nemo facere eum non illo voluptatem quae delectus odit vel itaque amet.</p>
+			
+			<hr class="uk-divider-icon">
+			
 		</section>
 
 		<section id="ourTeam">
@@ -167,19 +184,46 @@
 								</div>
 								<div class="back">
 									<!-- back content -->
-									<div class="card">
+									<div class="card" align-middle>
 									  	<div class="card-block">
-											<h4 class="card-title">Godziny przyjęć:</h4>
+											<h4 class="card-title-back">Godziny przyjęć:</h4>
 <!--											<h6 class="card-subtitle text-muted">Support card subtitle</h6>-->
 									  	</div>
 									  
-									  	<div class="card-block">
+										<div class="card-block">
 											<p class="card-text">
 												poniedziałek 12:00 - 18:00<br>
 												czwartek 12:00 - 18:00
 											</p>
-											<hr>
-											<a href="#" class="card-link">Wiecej...</a>									
+											<hr>				
+											
+											<div class="uk-offcanvas-content">
+
+												<button class="uk-button uk-button-default uk-margin-small-right" type="button" uk-toggle="target: #offcanvas-usage">Więcej o mnie</button>
+
+												<div id="offcanvas-usage" uk-offcanvas="overlay: true">
+													<div class="uk-offcanvas-bar">
+														
+
+														<h3 class="offcanvasTitle">Mikołaj Charzewski</h3>
+
+														<h5>Wykształcenie:</h5>
+														<ul>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+														</ul>
+														<h5>Doświadczenie:</h5>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+														
+														<h5>Zainteresowania:</h5>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam laboriosam, dolore nostrum explicabo labore, animi.</p>
+
+													</div>
+												</div>
+
+											</div>
+																							
 									  </div>
 									</div>
 								</div>
@@ -208,7 +252,7 @@
 									<!-- back content -->
 									<div class="card">
 									  	<div class="card-block">
-											<h4 class="card-title">Godziny przyjęć:</h4>
+											<h4 class="card-title-back">Godziny przyjęć:</h4>
 <!--											<h6 class="card-subtitle text-muted">Support card subtitle</h6>-->
 									  	</div>
 									  
@@ -218,7 +262,32 @@
 												piątek 12:00 - 18:00
 											</p>
 											<hr>
-											<a href="#" class="card-link">Więcej...</a>								
+											
+											<div class="uk-offcanvas-content">
+
+												<button class="uk-button uk-button-default uk-margin-small-left" type="button" uk-toggle="target: #offcanvas-flip">Więcej o mnie</button>
+
+												<div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+													<div class="uk-offcanvas-bar">
+
+														<h3 class="offcanvasTitle">Katarzyna Charzewska</h3>
+
+														<h5>Wykształcenie:</h5>
+														<ul>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+															<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit</li>
+														</ul>
+														<h5>Doświadczenie:</h5>
+														<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+														<h5>Zainteresowania:</h5>
+														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam laboriosam, dolore nostrum explicabo labore, animi.</p>
+
+													</div>
+												</div>
+
+											</div>							
 									  </div>
 									</div>
 								</div>
@@ -233,9 +302,20 @@
 			</div>
 		</section>
 
+		<section id="whatWeDo">
+		
+			<h2 class="sectionTitle text-center">Co robimy?</h2>
+			<div class="list-group text-center">
+				<a class="list-group-item">Cras justo odio</a>
+				<a class="list-group-item">Dapibus ac facilisis in</a>
+				<a class="list-group-item">Morbi leo risus</a>
+				<a class="list-group-item">Porta ac consectetur ac</a>
+				<a class="list-group-item">Vestibulum at eros</a>
+			</div>
+			
+		</section>
 
-
-		<setion id="whyWe">
+		<section id="whyWe">
 
 <!--
 			<div class="row">
@@ -298,30 +378,89 @@
 			
 			</div>
 
-		</setion>
-
-		<div id="opinion">
-
-
-		</div>
-
-		<div id="appointment">
-
-
-		</div>
-
-		
+		</section>
+		<hr class="uk-divider-icon">
 	</div>
 	
+	
+	
+	<section id="testimonials" class="container-fluid">
+		<h2 class="sectionTitle text-center">Co o nas mówią?</h2>
+		<div class="row">
+			<div class="col-md-12">
+				<div id="testimonial-slider" class="owl-carousel">
+				
+					<div class="testimonial">
+						<div class="pic">
+							<img src="/assets/images/img-1.jpg" alt="">
+						</div>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor finibus risus. Vivamus quis aliquet nibh. Nunc vitae felis nunc. Nam scelerisque maximus tempor. Proin sed euismod tellus. Nunc sodales, quam et porttitor accumsan, lectus dolor laoreet dolor, a scelerisque.
+						</p>
+						<h3 class="testimonial-title">Jan - kierowca</h3>
+					</div>
+
+					<div class="testimonial">
+						<div class="pic">
+							<img src="/assets/images/img-2.jpg" alt="">
+						</div>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor finibus risus. Vivamus quis aliquet nibh. Nunc vitae felis nunc. Nam scelerisque maximus tempor.
+						</p>
+						<h3 class="testimonial-title">Malwina - księgowa</h3>
+					</div>
+
+					<div class="testimonial">
+						<div class="pic">
+							<img src="/assets/images/img-3.jpg" alt="">
+						</div>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor finibus risus. Vivamus quis aliquet nibh. 
+						</p>
+						<h3 class="testimonial-title">Mateusz - Web Developer</h3>
+					</div>
+
+					<div class="testimonial">
+						<div class="pic">
+							<img src="/assets/images/img-4.jpg" alt="">
+						</div>
+						<p class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempor finibus risus. Vivamus quis aliquet nibh. Nunc vitae felis nunc. Nam scelerisque maximus tempor. 
+						</p>
+						<h3 class="testimonial-title">Ewa - architekt</h3>
+					</div>
+
+					<div class="testimonial">
+						<div class="pic">
+							<img src="/assets/images/img-5.jpg" alt="">
+						</div>
+						<p class="description">
+							Curabitur tempor finibus risus. Vivamus quis aliquet nibh. Nunc vitae felis nunc. Nam scelerisque maximus tempor. Proin sed euismod tellus. Nunc sodales, quam et porttitor accumsan, lectus dolor laoreet dolor, a scelerisque.
+						</p>
+						<h3 class="testimonial-title">Michał - kucharz</h3>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div id="appointment" class="container">
+		<hr>
+
+	</div>
+
+		
 	<div id="map" >
 			<h2 class="sectionTitle text-center">Gdzie nas znaleźć?</h2>
-			<h5 class="text-center"><b>Gabinet stomatologiczny<br>
-                Mikołaj i Katarzyna Charzewscy</b>
-            </h5>
-            <h6 class="text-center">
-                ul. Władysława IV 1-5<br>
-                Gdynia
-            </h6>
+			
+			<div class="text-center">
+				<h4>Gabinet stomatologiczny<br>
+					Katarzyna i Mikołaj Charzewscy</h4>
+				<h5>ul. Władysława IV 1-5<br>
+					81-353 Gdynia</h5>
+			</div>
+			
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1157.7992752295288!2d18.538272772039985!3d54.52294099650734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTTCsDMxJzIyLjYiTiAxOMKwMzInMjEuMSJF!5e0!3m2!1spl!2spl!4v1504268882889" width=100% height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
 			
 
