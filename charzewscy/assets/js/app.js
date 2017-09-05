@@ -15,7 +15,7 @@ $(window).scroll(function() {
 
 $(document).ready(function(){
 	$("#testimonial-slider").owlCarousel({
-		items:3,
+		items: 3,
 		itemsDesktop:[1199,2],
 		itemsDesktopSmall:[979,2],
 		itemsTablet:[768,2],
@@ -33,3 +33,4 @@ $(document).ready(function(){
 		autoplayHoverPause:true
 	});
 });
+
